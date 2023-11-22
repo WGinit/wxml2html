@@ -1,0 +1,16 @@
+{
+  "name": "wxml2html",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node index.js"
+  },
+  "keywords": ["wxml2html", "wxmltohtml", "wxml", "html"],
+  "author": "wginit",
+  "license": "ISC",
+  "dependencies": {
+    "parse5": "^7.1.2"
+  }
+}
