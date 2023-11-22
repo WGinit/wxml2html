@@ -51,11 +51,11 @@ var elementStringify = (elementSpec, options) => {
     return elementHtml;
 }
 
-module.exports = (wxmlContent, options) => {
+module.exports = (wxmlContent, screenWidth, options) => {
     options = options || {};
     options = extend(true, {}, defaultTransformOptions, options);
     var html = "",
-        wxmlObject = toObject(wxmlContent);
+        wxmlObject = toObject(wxmlContent, screenWidth);
     each(wxmlObject, item => {
         html += elementStringify(item, options);
     });

@@ -104,7 +104,13 @@ const extend = function () {
 }
 
 
+const rpx2px = (rpxValue, screenWidth = 750) => {
+    const pxValue = rpxValue / 750 * screenWidth; // 将rpx转换成px
+    return pxValue;
+}
+
 module.exports = {
     each,
-    extend
+    extend,
+    rpx2px
 }
